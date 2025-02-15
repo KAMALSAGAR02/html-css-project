@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeMyTrip - Your Travel Partner</title>
+    <link rel="stylesheet" href="8.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MakeMyTrip</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="8.html">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="9.html">Booking</a></li>
+                <li><a href="10.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h2>Discover Your Next Adventure</h2>
+            <p>Book flights, hotels, and holiday packages at unbeatable prices!</p>
+            <a href="#booking" class="cta-button">Book Now</a>
+        </div>
+    </section>
+
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination-list">
+            <div class="destination">
+                <img src="https://wallpapercave.com/wp/wp9436559.jpg" alt="Paris" width="300px" height="300px">
+                <h3>Paris</h3>
+                <p>Experience the city of lights, romance, and culture.</p>
+            </div>
+            <div class="destination">
+                <img src="https://th.bing.com/th?id=OIP.xjTFp2ctXdwoTy2U7MLiYwHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="New York">
+                <h3>New York</h3>
+                <p>The city that never sleeps, offering world-class attractions.</p>
+            </div>
+            <div class="destination">
+                <img src="https://th.bing.com/th/id/OIP.pTtM0X8nNx8Z-YyOeW2b-wHaEK?w=333&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Tokyo">
+                <h3>Tokyo</h3>
+                <p>A blend of tradition and modernity, offering unique experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Trip</h2>
+        <form action="submit_booking.php" method="POST">
+            <label for="destination">Destination:</label>
+            <select id="destination" name="destination" required>
+                <option value="Paris">Paris</option>
+                <option value="New York">New York</option>
+                <option value="Tokyo">Tokyo</option>
+            </select>
+
+            <label for="date">Travel Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us.</p>
+        <form action="submit_contact.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MakeMyTrip. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
